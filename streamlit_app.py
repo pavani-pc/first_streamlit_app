@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import snowflake.connector
+from urllib.error import URLError
 st.title('My Parents New Healthy Diner')
 st.header('Breakfast Menu')
 st.text(' 🥣 Omega 3 & Blueberry Oatmeal')
@@ -34,4 +35,4 @@ st.header("The fruit load list contains")
 st.dataframe(my_data_row)
 #Allow a user to enter a fruit to the list
 add_my_fruit=st.text_input('What fruit would you like to add?','jackfruit')
-st.write('The user entered',add_my_fruit)
+st.write('Thanks for adding',add_my_fruit)
